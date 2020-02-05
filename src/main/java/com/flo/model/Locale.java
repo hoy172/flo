@@ -15,7 +15,7 @@ public class Locale {
     private String localeName;
 
     @OneToMany(mappedBy = "locale")
-    private Collection<AlbumLocale> albumLocales = new ArrayList<>();
+    private Collection<AlbumLocale> albumLocale = new ArrayList<>();
 
 
 }
