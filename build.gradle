@@ -30,12 +30,12 @@ dependencies {
 
 }
 
-//flyway {
-//    url = 'jdbc:mysql://mysql-server:3306/my_database?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false'
-////    url = 'jdbc:mysql://127.0.0.1:3306/my_database?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false'
-//
-//    user = 'root'
-//    password = 'password'
-////    password = '8956'
-//
-//}
+flyway {
+    url = 'jdbc:mysql://mysql-server:3306/my_database?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false'
+//    url = 'jdbc:mysql://127.0.0.1:3306/my_database?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false'
+
+    user = 'root'
+    password = 'password'
+//    password = '8956'
+
+}

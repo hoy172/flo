@@ -33,11 +33,6 @@ public class FloApplication {
     @Autowired
     private static Util util;
 
-    @RequestMapping("/")
-    @ResponseBody
-    public String hello() throws IOException {
-        return "Hello";
-    }
 
     public static void main(String[] args) throws IOException {
         SpringApplication.run(FloApplication.class, args);

@@ -22,6 +22,10 @@ public class AlbumController {
     @Autowired
     private AlbumRepository albumRepository;
 
+    @RequestMapping(value = "/")
+    public void test(){
+    }
+
     @RequestMapping(value = "/all")
     public List<Album> getAll(){
         return albumRepository.findAll();
