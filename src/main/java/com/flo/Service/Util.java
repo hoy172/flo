@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flo.model.Album;
 import com.flo.model.Locale;
 import com.flo.model.Song;
+import com.flo.model.TestData;
 import com.flo.repository.AlbumRepository;
 import com.flo.repository.LocaleRepository;
 import com.flo.repository.SongRepository;
@@ -39,15 +40,15 @@ public class Util {
         this.songRepository = songRepository;
     }
 
-//    @EventListener(ApplicationReadyEvent.class)
+    @EventListener(ApplicationReadyEvent.class)
     @Transactional
     public void getJson() throws IOException {
-        File jsonFile = ResourceUtils.getFile("classpath:album.json");
 
 
         ObjectMapper mapper = new ObjectMapper();
 //        File jsonFile = new File(getClass().getResource("album.json").getFile());
-        JsonNode jsonNode = mapper.readTree(jsonFile);
+        TestData testData = new TestData();
+        JsonNode jsonNode = mapper.readTree(testData.td);
         Iterator iterator = jsonNode.iterator();
         while (iterator.hasNext()){
             JsonNode albumNode = mapper.readTree(iterator.next().toString());
