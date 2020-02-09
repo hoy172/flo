@@ -24,6 +24,8 @@ import java.util.Iterator;
 
 @Component
 public class Util {
+
+
     @Autowired
     private final AlbumRepository albumRepository;
     @Autowired
@@ -37,7 +39,7 @@ public class Util {
         this.songRepository = songRepository;
     }
 
-    @EventListener(ApplicationReadyEvent.class)
+//    @EventListener(ApplicationReadyEvent.class)
     @Transactional
     public void getJson() throws IOException {
         File jsonFile = ResourceUtils.getFile("classpath:album.json");
