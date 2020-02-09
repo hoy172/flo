@@ -35,5 +35,7 @@ flyway {
 //    url = 'jdbc:mysql://127.0.0.1:3306/my_database?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false'
 
     user = 'root'
-    password = 'password'
+//    password = 'password'
+    password = '8956'
+
 }

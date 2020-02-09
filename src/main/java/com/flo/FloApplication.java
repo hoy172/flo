@@ -33,6 +33,7 @@ public class FloApplication {
     @Autowired
     private static Util util;
 
+    @RequestMapping("/")
     @ResponseBody
     public String hello() throws IOException {
         return "Hello";
